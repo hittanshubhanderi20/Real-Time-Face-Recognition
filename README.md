@@ -10,7 +10,8 @@ Enhanced security: Provides robust access control and crime prevention measures.
 ## Challenges:
 Privacy concerns: Raises ethical issues regarding biometric data collection and potential for unauthorized surveillance. Security risks: Biometric data breaches can lead to identity theft and other security threats. Legal and regulatory hurdles: Lack of clear regulations surrounding facial recognition can lead to inconsistent practices and legal challenges. Cost and infrastructure: Requires high-performance hardware and computational resources, potentially posing a barrier for smaller organizations.
 
-## Project Outcome: Successfully implemented face detection, feature extraction, and matching algorithms using OpenCV. Demonstrated the effectiveness of Python in integrating OpenCV for an intuitive and efficient system. Emphasized the importance of continuous training and model improvement for real-world accuracy and robustness.
+## Project Outcome: 
+Successfully implemented face detection, feature extraction, and matching algorithms using OpenCV. Demonstrated the effectiveness of Python in integrating OpenCV for an intuitive and efficient system. Emphasized the importance of continuous training and model improvement for real-world accuracy and robustness.
 
 ## Conclusion:
 This project showcases the potential of OpenCV and Python for building reliable and practical real-time face recognition systems in security, access control, and user authentication. As technology advances, even greater accuracy and applications are expected, contributing to the development of intelligent and adaptive solutions across various domains.

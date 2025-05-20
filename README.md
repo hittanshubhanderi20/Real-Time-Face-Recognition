@@ -1,17 +1,114 @@
-# Real-Time-Face-Recognition
-This project aims to build a real-time face recognition system for integration into smart security systems. Using OpenCV and Python, it identifies and verifies individuals from live video or recorded footage.
+# 🧠 Real-Time Face Recognition System
 
-## Key Features:
-Real-time identification: Recognizes faces instantly from video streams or images. Security applications: Integrates with building access control, public space monitoring, and criminal database comparison. User authentication: Enables unlocking devices and securing online accounts with facial recognition. Open-source and affordable: Utilizes OpenCV's free and versatile library for image processing and face recognition tasks.
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)
+![OpenCV](https://img.shields.io/badge/OpenCV-Enabled-green.svg)
+![Face Recognition](https://img.shields.io/badge/Face%20Recognition-Real%20Time-orange.svg)
 
-## Benefits:
-Enhanced security: Provides robust access control and crime prevention measures. Efficient authentication: Offers convenient and secure user verification compared to passwords. Automation and efficiency: Streamlines operations by eliminating manual identity checks. Crime prevention and investigation: Aids in identifying individuals for crime prevention and investigation.
+---
 
-## Challenges:
-Privacy concerns: Raises ethical issues regarding biometric data collection and potential for unauthorized surveillance. Security risks: Biometric data breaches can lead to identity theft and other security threats. Legal and regulatory hurdles: Lack of clear regulations surrounding facial recognition can lead to inconsistent practices and legal challenges. Cost and infrastructure: Requires high-performance hardware and computational resources, potentially posing a barrier for smaller organizations.
+## 🎯 Project Overview
 
-## Project Outcome: 
-Successfully implemented face detection, feature extraction, and matching algorithms using OpenCV. Demonstrated the effectiveness of Python in integrating OpenCV for an intuitive and efficient system. Emphasized the importance of continuous training and model improvement for real-world accuracy and robustness.
+This project implements a **real-time facial recognition system** using computer vision and machine learning. Built with OpenCV and `face_recognition`, it detects and recognizes known faces live from a webcam feed and can be extended to support automatic attendance systems, surveillance, and more.
 
-## Conclusion:
-This project showcases the potential of OpenCV and Python for building reliable and practical real-time face recognition systems in security, access control, and user authentication. As technology advances, even greater accuracy and applications are expected, contributing to the development of intelligent and adaptive solutions across various domains.
+---
+
+## 🔍 Features
+
+- 📸 Real-time webcam video feed with face bounding boxes
+- 🧠 Face encoding and comparison using `face_recognition` (dlib)
+- 📂 Auto-saves unknown faces into a directory for review
+- ✅ Easily extensible for access control or identity verification use cases
+- 💾 Face data stored as encodings for fast future recognition
+
+---
+
+## 🛠️ Tech Stack
+
+| Component      | Library/Tool        |
+|----------------|---------------------|
+| Face Detection | `face_recognition`, `dlib` |
+| Video Feed     | `OpenCV`            |
+| Model Backend  | CNN / HOG (via `dlib`) |
+| Data Handling  | Python (`os`, `numpy`) |
+| Deployment     | Standalone `.py` script |
+
+---
+
+## 🗂 Project Structure
+
+```
+
+Real-Time-Face-Recognition/
+├── known\_faces/                # 📁 Folder with labeled images for known people
+├── unknown\_faces/              # 📁 Folder to store captured unknown faces
+├── face\_recognition\_main.py    # 🎯 Main script to run real-time face recognition
+├── encode\_faces.py             # 🧠 Preprocessing: encodes known faces
+├── requirements.txt            # 📦 Python dependencies
+├── README.md                   # 📘 Project documentation
+
+````
+
+---
+
+## 📸 Sample Workflow
+
+1. Load known faces from `known_faces/`
+2. Run webcam and detect faces in real-time
+3. Compare each face to known encodings
+4. Annotate names or label as "Unknown"
+5. Save unknown faces for future training
+
+---
+
+## ▶️ How to Run
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/hittanshubhanderi20/Real-Time-Face-Recognition.git
+cd Real-Time-Face-Recognition
+````
+
+### 2. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Encode your known faces
+
+Add labeled images (one face per image) to the `known_faces/` folder, then run:
+
+```bash
+python encode_faces.py
+```
+
+### 4. Start recognition system
+
+```bash
+python face_recognition_main.py
+```
+
+---
+
+## ⚠️ Notes
+
+* Ensure your webcam is connected and functional
+* Lighting conditions significantly affect recognition accuracy
+* Resize large images in `known_faces/` for performance
+* Best results come with high-quality, front-facing images
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+## 🙋‍♂️ Contact
+
+Built with ❤️ by Hittanshu Bhanderi
+Connect via [LinkedIn](https://www.linkedin.com/in/hittanshubhanderi/)
+
+---
